@@ -1,9 +1,15 @@
-function nomeDaFuncao() { 
-    // Substitua "nomeDaSuaFuncao" por um nome mais apropriado
-    // TODO: escrever dois loops aninhados para desenhar o array bidimensional e monstar o restante da tabela no console.
-    let x = [];
-    for (let i = 0; i <= 10; i++) {
-        x[i] = [];
+function tabelaMultiplicacao(numero) { 
+
+    let tabela = [];
+
+    for (let index = 0; index <= numero; index++) {
+            tabela[index] = [];
+        for(let contador = 0; contador <= numero; contador++){
+            tabela[index][contador] = contador* index;
+        }
     }
-    console.table(x)
+
+    console.table(tabela);
 }
+
+tabelaMultiplicacao(7)
